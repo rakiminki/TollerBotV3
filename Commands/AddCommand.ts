@@ -1,4 +1,4 @@
-import { SlashCommandBuilder } from "discord.js";
+import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
 import Feature from "../Feature";
 import AbstractWriteCommand from "./AbstractWriteCommand";
 
@@ -12,7 +12,7 @@ export class AddCommand extends AbstractWriteCommand {
   alias = ["add"];
   enabled = Feature.AddCommand;
 
-  execute(interaction): void {
+  execute(interaction: ChatInputCommandInteraction): void {
     this.reply(interaction, "TODO!");
   }
 

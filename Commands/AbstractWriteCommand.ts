@@ -10,7 +10,7 @@ export default abstract class AbstractWriteCommand implements ICommand {
   abstract alias: string[];
   abstract enabled: Feature;
 
-  abstract execute(interaction: ChatInputCommandInteraction<CacheType>): void;
+  abstract execute(interaction: ChatInputCommandInteraction): void;
 
   build() {
     let commands: Omit<SlashCommandBuilder, any>[] = [];
