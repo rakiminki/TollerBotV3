@@ -2,9 +2,6 @@ import { CacheType, ChatInputCommandInteraction, Message, SlashCommandBuilder } 
 import AbstractWriteCommand from "./AbstractWriteCommand";
 
 export class PingCommand extends AbstractWriteCommand {
-  constructor() {
-    super();
-  }
   description = "Makes the Ball pong";
   alias = ["ping", "debug"];
 

@@ -1,12 +1,7 @@
 import { ChatInputCommandInteraction, SlashCommandBuilder } from "discord.js";
-import { isTypeAliasDeclaration } from "typescript";
 import AbstractWriteCommand from "./AbstractWriteCommand";
-import ICommand from "./ICommand";
 
 export class AddCommand extends AbstractWriteCommand {
-  public constructor() {
-    super();
-  }
   description = "Add a Trigger";
   alias = ["add"];
 

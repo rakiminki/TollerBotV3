@@ -2,8 +2,6 @@ import { ChatInputCommandInteraction, CacheType, SlashCommandBuilder, Interactio
 import ICommand from "./ICommand";
 
 export default abstract class AbstractWriteCommand implements ICommand {
-  constructor() {}
-
   name: string = "";
   abstract description: string;
   abstract alias: string[];
