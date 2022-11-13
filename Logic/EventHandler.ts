@@ -6,7 +6,9 @@ const Loggingtypes = Log.Loggingtypes;
 export default class EventHandler {
   static registerEvents() {
     client.on(Discord.Events.InteractionCreate, this.onInteractionCreate);
+    Logger.log(`Event InteractionCreate(${Discord.Events.InteractionCreate}) registered`, Loggingtypes.BUILD);
     client.on(Discord.Events.ClientReady, this.onReady);
+    Logger.log(`Event ClientReady(${Discord.Events.ClientReady}) registered`, Loggingtypes.BUILD);
   }
 
   private static onInteractionCreate = (interaction: Discord.Interaction) => {

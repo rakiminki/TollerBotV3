@@ -35,7 +35,7 @@ export default class CommandRegister {
     client.commands.set("g" + command.name, command);
 
     const res = command.build();
-    Logger.log(`${command.name} registered`, Log.Loggingtypes.BUILD);
+    Logger.log(`Command ${command.name} registered`, Log.Loggingtypes.BUILD);
     return res;
   }
 
