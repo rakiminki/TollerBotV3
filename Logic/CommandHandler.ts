@@ -41,7 +41,7 @@ export default class CommandRegister {
 
   private static getAll = () => {
     let res: ICommand[] = [];
-    Features.Enabled.forEach((element: any) => {
+    Features.EnabledCommands.forEach((element: any) => {
       res = res.concat(AbstractWriteCommand.getAllInstances(element));
     });
     res;
